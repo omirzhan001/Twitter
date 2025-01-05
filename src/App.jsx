@@ -4,7 +4,6 @@ import Home from './components/HomeComponent'
 import Info from './components/homComponentInfo'  
 
 function App() {
-
   return (
     <>
     <div className="App d-flex mx-5">

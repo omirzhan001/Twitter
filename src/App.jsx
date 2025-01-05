@@ -1,6 +1,7 @@
 import './App.css'
 import SideMenu from './components/SideMenuComponent'
 import Home from './components/HomeComponent'
+import Info from './components/homComponentInfo'  
 
 function App() {
 
@@ -8,8 +9,10 @@ function App() {
     <>
     <div className="App d-flex mx-5">
       <SideMenu />
-      <div className='verticel-devider'></div>
+      <hr className='verticel-devider'/>
       <Home />
+      <hr className='verticel-devider '/>
+      <Info />
     </div>
     </>
   )

@@ -20,7 +20,7 @@ function SideMenu() {
 
   return (
     <div className="w-25 mt-3 mx-5">
-      <img src={MESSAGES_SVG} alt="Twitter X logo" className='logo-icon mb-2' />
+      {/* <img src={MESSAGES_SVG} alt="Twitter X logo" className='logo-icon mb-2'  /> */}
 
       {menu.map((item, index) => <MenuItem item ={item} key={index} />)}
       <button><a>Post</a></button>

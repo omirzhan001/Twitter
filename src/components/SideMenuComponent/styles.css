@@ -2,3 +2,22 @@
     width: 30px;
     height: 30px;
 }
+
+.menu-item-icon {
+    fill: rgb(255, 255, 255); /* Покрасить SVG */
+    width: 30px;
+    height: 30px;
+}
+
+.menu-item-text {
+    color: rgb(255, 255, 255); /* Покрасить текст */
+    font-size: 18px;
+}
+
+body {
+    background-color: black;
+}
+.mx-5 {
+    margin-right: 1rem!important;
+    margin-left: 5rem!important;
+}

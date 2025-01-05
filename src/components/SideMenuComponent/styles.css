@@ -21,3 +21,28 @@ body {
     margin-right: 1rem!important;
     margin-left: 5rem!important;
 }
+.button-post {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 200PX;
+    height: 50PX;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;  
+}
+
+.login-div {
+    display: flex;
+}
+.img-login {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    margin-right: 15px;
+}

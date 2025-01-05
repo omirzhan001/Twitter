@@ -8,15 +8,18 @@ export default function Home() {
 
   return (
     <div className="home-menu w-50">
-      <header className="header-menu">
+      <header className="header-menu mt-4 mb-4">
         <Link to="/">For You</Link>
         <Link to={`/following/${userId}`}>Following</Link>
       </header>
-      <Routes>
+      <div className="linehr"> </div>
+     <div className="content-menu mt-4">
+      <Routes >
         <Route path="/" element={<TwitterForyou />} />
         <Route path="/following/:id" element={<TwitterFollowing />} />
         <Route path="*" element={<div className="not-found">404 - Страница не найдена</div>} />
       </Routes>
+      </div>
     </div>
   );
 }

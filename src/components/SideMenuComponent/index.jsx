@@ -1,5 +1,6 @@
-import { BOOKMARKS_SVG, EXPLORE_SVG, HOME_SVG, MESSAGES_SVG, NOTIFICATIONS_SVG, GROK_SVG, COMMUNITIES_SVG,PREMIUM_SVG,VERIFIEDORGS_SVG,PROFILE_SVG,MORE_SVG,ICON_SVG} from './images';
+import { BOOKMARKS_SVG, EXPLORE_SVG, HOME_SVG, MESSAGES_SVG, NOTIFICATIONS_SVG, GROK_SVG, COMMUNITIES_SVG, PREMIUM_SVG, VERIFIEDORGS_SVG, PROFILE_SVG, MORE_SVG, ICON_SVG } from './images';
 import MenuItem from './Menuitem';
+import Omir_SVG from './images/omir.png';
 import './styles.css';
 
 function SideMenu() {
@@ -19,11 +20,18 @@ function SideMenu() {
   ];
 
   return (
-    <div className="w-25 mt-3 mx-5">
+    <div className="w-25 mt-3">
       {/* <img src={MESSAGES_SVG} alt="Twitter X logo" className='logo-icon mb-2'  /> */}
 
-      {menu.map((item, index) => <MenuItem item ={item} key={index} />)}
-      <button><a>Post</a></button>
+      {menu.map((item, index) => <MenuItem item={item} key={index} />)}
+      <button className='button-post'><a>Post</a></button>
+
+      <div className='login-div mt-3'>
+        <img src={Omir_SVG} alt="" className='img-login' />
+        <div><a>Omirzhan Amirkhan</a>
+          <br /> <span className=''>@Omirzhan001</span>
+        </div>
+      </div>
     </div>
   );
 }

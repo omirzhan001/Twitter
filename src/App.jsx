@@ -7,13 +7,13 @@ import Info from './components/homComponentInfo'
 function App() {
   return (
     <>
-      <div className="App d-flex mx-5">
+      <div className="App d-flex">
         <SideMenu />
-        <hr className='verticel-devider' />
+        <div className='verticel-devider' />
         <BrowserRouter>
           <Home />
         </BrowserRouter>
-        <hr className='verticel-devider ' />
+        <div className='verticel-devider ' />
         <Info />
       </div>
     </>

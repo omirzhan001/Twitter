@@ -20,16 +20,17 @@ function SideMenu() {
   ];
 
   return (
-    <div className="w-25 mt-3">
+    <div className="w-25 mt-3 mx-2 ">
       {/* <img src={MESSAGES_SVG} alt="Twitter X logo" className='logo-icon mb-2'  /> */}
+      <div className='menu-Item mx-5'>
+        {menu.map((item, index) => <MenuItem item={item} key={index} />)}
+        <button className='button-post'><a>Post</a></button>
 
-      {menu.map((item, index) => <MenuItem item={item} key={index} />)}
-      <button className='button-post'><a>Post</a></button>
-
-      <div className='login-div mt-3'>
-        <img src={Omir_SVG} alt="" className='img-login' />
-        <div><a>Omirzhan Amirkhan</a>
-          <br /> <span className=''>@Omirzhan001</span>
+        <div className='login-div mt-3'>
+          <img src={Omir_SVG} alt="" className='img-login' />
+          <div><a>Omirzhan Amirkhan</a>
+            <br /> <span className=''>@Omirzhan001</span>
+          </div>
         </div>
       </div>
     </div>

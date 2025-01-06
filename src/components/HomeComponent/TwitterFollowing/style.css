@@ -1,0 +1,71 @@
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.search-bar {
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px; 
+    width: 100%;
+    height: 60px;
+}
+.profile-info {
+    width: 70%;
+}
+.svg-post {
+    fill: rgba(255, 255, 255, 0.5); /* Покрасить SVG */
+    width: 20px;
+    height: 20px;
+}
+.tweet-content {
+    color: rgba(255, 255, 255, 0.459);
+}
+ .verticel-devider-twitter-1{
+    width: 100%;
+    height:2px;
+    background-color: rgb(255, 255, 255);
+}
+.media-svg {
+    fill: rgb(29, 155, 240); /* Покрасить SVG */
+    width: 20px;
+    height: 20px;
+    list-style-type: none;
+}
+.post-button {
+    background-color: #ffffff62;
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 80PX;
+    height: 30PX;
+    text-align: center;
+    border-radius: 50px; 
+}
+.media-div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.content-tweet {
+    width: 80%;
+    height: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    resize: none;
+}
+.content-tweet-img {
+    border-radius: 15px; /* Радиус закругления */
+    overflow: hidden; /* Обрезка содержимого за границами */
+    width: 80%; /* Ширина изображения */
+    height: auto; /* Сохранение пропорций */
+}
+.content-tweet-text {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}

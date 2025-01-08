@@ -1,12 +1,10 @@
-import KZ_IMG_PATH from "./images/kz.png";
 import './style.css';
-import { COMMENTS, RETWEETS, LIKES, SHARE } from './images/index.jsx';
+import { COMMENTS, RETWEETS, LIKES, } from './images/index.jsx';
 
 
 export default function Tweet(tweet) {
     return (
         <div >
-            {/* <p>You might like! <span>See more!</span></p> */}
             <div className="tweet">
                 <div className="d-flex mx-3">
                     <img src={tweet.img} className='profile-img mx-2' />

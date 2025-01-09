@@ -4,7 +4,7 @@ import TwitterFollowing from './TwitterFollowing';
 import { Routes, Route, Link } from 'react-router-dom';
 
 export default function Home() {
-  const userId = '12345'; // Пример userId, который можно заменить динамическим значением
+  const userId = '12345'; 
 
   return (
     <div className="home-menu w-50">

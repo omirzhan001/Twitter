@@ -33,6 +33,17 @@
     height: 20px;
     list-style-type: none;
 }
+.media-svg-x {
+    display: flex;
+    justify-content: flex-end;
+    fill: rgb(29, 155, 240); /* Покрасить SVG */
+    width: 35px;
+    height: 35px;
+    list-style-type: none;
+    border:none;
+    background-color:transparent;
+
+}
 .post-button {
     background-color: #ffffff62;
     color: rgb(0, 0, 0);

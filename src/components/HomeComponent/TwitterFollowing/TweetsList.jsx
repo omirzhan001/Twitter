@@ -1,5 +1,6 @@
 import KZ_IMG_PATH from "./images/kz.png";
 import NFACTOR from "./images/nFactorial.png";
+import Omir_SVG from './images/omir.png';
 import Tweet from "./Tweet.jsx";
 import React from "react";
 
@@ -44,6 +45,7 @@ class TweetsList extends React.Component {
         }
 
         this.onChangeTextInput = this.onChangeTextInput.bind(this);
+        this.deleteTweet = this.deleteTweet.bind(this);
     }
     onChangeTextInput = (e) => {
         console.log(e);
@@ -53,36 +55,49 @@ class TweetsList extends React.Component {
     }
     addToTweets = () => {
         console.log("dsadsadsas")
-/*         const newTweet = {
+        const newTweet = {
             id: this.state.tweets.length,
-            authorName: 'Aruzhan',
-            authorUsername: '@azhaubassar',
-            img: PROFILE_IMG_PATH,
+            authorName: 'Omirzhan',
+            authorUsername: 'Amirkhan',
+            img: KZ_IMG_PATH,
             content: this.state.content,
             replies: 0,
             retweets: 0,
             likes: 0,
-            topic: 'blabla'
+            topic: 'a'
         }
 
         this.setState({
             tweets: [...this.state.tweets, newTweet],
             content: ''
-        }) */
+        })
+    }
+
+    deleteTweet = (tweetId) => {
+        console.log("delete", tweetId);
+        this.setState({
+            tweets: this.state.tweets.filter(tweet => tweet.id !== tweetId)
+        });
     }
     render() {
 
-        const { tweets, content } = this.state;
+        const { tweets, content, } = this.state;
 
         return (
             <div>
                 {this.props.children({
                     content,
                     onChangeTextInput: this.onChangeTextInput,
-                    onTweet: this.addToTweets, // Передача метода
+                    onTweet: this.addToTweets,
                 })}
 
-                {tweets.map((tweet) => <Tweet key={tweet.id} {...tweet} />)}
+                {tweets.map(tweet => (
+                    <Tweet
+                        key={tweet.id}
+                        tweet={tweet}
+                        deleteTweet={() => this.deleteTweet(tweet.id)} 
+                    />
+                ))}
             </div>
         )
     }

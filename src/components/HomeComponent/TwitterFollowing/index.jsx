@@ -20,8 +20,6 @@ export default function TwitterFollowing() {
                 placeholder="What is happening?!"
                 className="search-bar mx-3 my-2"
               />
-
-
               <div className="mx-4"><p>Everyone can reply</p></div>
               <hr className=".verticel-devider-twitter-1" />
             </div>
@@ -44,8 +42,8 @@ export default function TwitterFollowing() {
           </div>
           <div className="input-container">
             <div className="search-wrapper mt-3 mx-4">
-              <input  placeholder="Search..."
-                onChange={(e) => setSearchTerm(e.target.value)} // Здесь мы оборачиваем вызов в стрелочную функцию
+              <input placeholder="Search..."
+                onChange={(e) => setSearchTerm(e.target.value)}
                 value={searchTerm}
                 className="styled-input"
               />

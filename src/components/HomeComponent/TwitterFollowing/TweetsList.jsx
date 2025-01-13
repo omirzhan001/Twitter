@@ -94,13 +94,12 @@ class TweetsList extends React.Component {
       <div>
 
         {this.props.children({
-        searchTerm,
+                 searchTerm,
                  setSearchTerm: this.setSearchTerm,
           content,
           onChangeTextInput: this.onChangeTextInput,
           onTweet: this.addToTweets,
         })}
-        <SearchInput setSearchTerm={this.setSearchTerm} />
         {filteredTweets.map(tweet => (
           <Tweet
             key={tweet.id}

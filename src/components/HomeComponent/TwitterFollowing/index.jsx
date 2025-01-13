@@ -7,7 +7,7 @@ import { MEDIA, C2, C3, C4, C5, C6 } from './images/index.jsx';
 export default function TwitterFollowing() {
   return (
     <TweetsList>
-       {({ content, onChangeTextInput, onTweet }) => (
+      {({ content, onChangeTextInput, onTweet, searchTerm, setSearchTerm }) => (
         <div>
           <div className="d-flex ">
             <div>
@@ -20,6 +20,8 @@ export default function TwitterFollowing() {
                 placeholder="What is happening?!"
                 className="search-bar mx-3 my-2"
               />
+
+
               <div className="mx-4"><p>Everyone can reply</p></div>
               <hr className=".verticel-devider-twitter-1" />
             </div>
@@ -37,6 +39,17 @@ export default function TwitterFollowing() {
             </div>
             <div>
               <button className="post-button" onClick={onTweet}>Post</button>
+            </div>
+
+          </div>
+          <div className="input-container">
+            <div className="search-wrapper mt-3 mx-4">
+              <input  placeholder="Search..."
+                onChange={(e) => setSearchTerm(e.target.value)} // Здесь мы оборачиваем вызов в стрелочную функцию
+                value={searchTerm}
+                className="styled-input"
+              />
+              <button className="search-icon">🔍</button>
             </div>
           </div>
           <hr className=".verticel-devider-twitter-1" />
